@@ -1,11 +1,8 @@
-import React, { Component } from 'react'
+import React from 'react'
 import { Link } from 'react-router-dom'
-
-
-export default class Navbar extends Component {
-  render() {
+const Navbar=()=> {
     return (
-    <>
+    <div>
       <div className="w-full flex items-center justify-between bg-slate-900 text-white h-[50px]">
         <div className='flex  flex-row text-lg'>
             <div className="mx-2  font-sans text-orange-200" to="/">Newsmode</div>
@@ -20,14 +17,9 @@ export default class Navbar extends Component {
             </div>
             </div>
         </div>  
-    </>
-        
-       
-   
-                
-       
-   
+    </div>
+
   )
 }
-}
 
+export default Navbar;
